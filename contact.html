@@ -1,25 +1,42 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact a la Bootstrap</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/yeti-bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Tom Miller</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html">Tom Miller</a>
+                
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="index.html">About Me</a></li>
+                        <li role="presentation"><a href="portfolio.html">Portfolio </a></li>
+                        <li role="presentation"><a href="contact.html">Contact </a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="index.html">Links<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a href="http://sps.northwestern.edu/program-areas/graduate/predictive-analytics/">Northwestern </a></li>
+                                <li role="presentation"><a href="https://www.uclaextension.edu/pages/extn/aboutus.jsp">UDLA </a></li>
+                                <li role="presentation"><a href="http://www.blocksixanalytics.com/">Block Six Analytics</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-  </header>
 
   <div id="main-container" class="container">
     <section class="main-section">
@@ -29,11 +46,11 @@
         <ul>
           <li>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required="required">
+            <input type="text" id="name" name="name" placeholder="Your name" required="required">
           </li>
           <li>
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Enter your e-mail address" required="required">
+            <input type="email" id="email" name="email" placeholder="Your e-mail address" required="required">
           </li>
           <li>
             <label for="message">Message</label>
@@ -61,6 +78,9 @@
       Copyright &copy; 2017 Tom Miller
     </div>
   </footer>
+
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
